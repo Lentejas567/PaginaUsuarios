@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="estilosUsuario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="contenedorBotonesPrincipales">
+    <button id="btn1">Agregar Usuario</button>
+    <button id="btn2">Mostrar Usuario</button>
+    <button id="btn3">Cambiar Clave</button>
+    <button id="btn4">Ver Clave</button>
+    </div>
+    
+    <div id="agregarUsuario" class="ocultar">
+        <h2 id="textoAgregarUsuario">Agregar Usuario</h2>
+        <input type="text" id="nombre" placeholder="Nombre">
+        <input type="text" id="email" placeholder="Email">
+        <input type="password" id="clave" placeholder="Clave">
+        <button id="btn-agregar">Agregar</button>
+    </div>
+
+    <div id="cambiarclave">
+        <h2>cambie su clave aqui</h2>
+        <input type="text" id="correoABuscar" placeholder="ingrese su correo">
+        <button id="correoIngresado">continuar</button>
+    </div>
+
+    <div id="claveNueva">
+        <input type="password" id="claveNuevaIngresada" placeholder="ingrese contraseña nueva">
+        <button id="contraseñaIngresada">guardar contraseña</button>
+        </div>
+
+    <div id="verClave">
+        <input type="text" id="correoAVerificar" placeholder="ingrese su correo">
+        <button id="paraVerClave">continuar</button>
+    </div>
+
+    <div class="contenedorResultado">
+        <div id="barraDeBusquedad" class="ocultar">
+        <input type="text" id="inputBarraBusquedad" placeholder="Buscar por nombre o correo">
+    </div>
+    <div id="resultado" class="ocultar"></div>
+    </div>
+
+    <img src="imagenesPaginaObjetoUsuario/teFallaNo.jpeg" id="teFalla" class="ocultar">
+    <img src="imagenesPaginaObjetoUsuario/like.jpeg" id="like" class="ocultar">
+    <img src="imagenesPaginaObjetoUsuario/osoOjosTapados.jpeg" id="oso" class="ocultar">
+    <script src="objetoUsuario.js"></script>
+</body>
+</html>

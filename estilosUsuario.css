@@ -1,0 +1,110 @@
+
+.ocultar{
+    display: none;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#textoAgregarUsuario{
+    color: white;
+}
+
+#barraDeBusquedad{
+    margin-bottom: 12px;
+
+}
+
+.contenedorResultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resultado{
+    color: white;
+    border: 2px solid rgb(237, 233, 233);
+    border-radius: 12px;
+    padding: 20px 32px;
+    min-width: 260px;
+    min-height: 60px;
+    background-color: transparent;
+    font-size: 1rem;
+    margin-left: 30px;
+}
+
+#resultado::-webkit-scrollbar{
+    width: 8px;
+}
+ 
+#resultado::-webkit-scrollbar-track{
+    background: transparent;
+}
+ 
+#resultado::-webkit-scrollbar-thumb{
+    background-color: rgb(237, 233, 233);
+    border-radius: 8px;
+}
+
+.contenedorBotonesPrincipales{
+     display: flex;
+     flex-direction: column; 
+     align-items: center;   
+     gap: 16px;      
+}
+
+button {
+    padding: 10px 24px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+}
+ 
+button:hover {
+    background-color: black;
+}
+ 
+
+#agregarUsuario,
+#cambiarclave,
+#claveNueva,
+#verClave {
+
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+input {
+    display: block;
+    gap: 12px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    width: 220px;
+}
+
+img{
+    border-radius: 20px;
+    border: 5px solid black;
+    box-shadow: 5px 5px 8px gray;
+    opacity: 0.9;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+}
